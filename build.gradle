@@ -38,7 +38,7 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 dependencies {
-    testImplementation 'junit:junit:4.7'
+direct string fix
 }
 
 publishing {
@@ -67,6 +67,9 @@ artifactory {
             properties = ['qa.level': 'basic', 'dev.team' : 'core']
             // Publish generated POM files to Artifactory (true by default)
             publishPom = true
+        }
+    }
+} true
         }
     }
 }
