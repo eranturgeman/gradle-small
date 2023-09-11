@@ -49,6 +49,10 @@ dependencies {
     implementation 'junit:junit:4.7',
             'commons-collections:commons-collections:3.2'
 
+    implementation(
+            group: 'commons-io', name: 'commons-io', version: '1.2'
+    )
+
     implementation("commons-collections:commons-collections:3.2") {
         exclude module: "MyHartaModule"
     }
