@@ -38,9 +38,9 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 dependencies {
-    testImplementation 'junit:junit:4.7' // simple string with ''
-    implementation "junit:junit:4.7" // simple string with ""
-    implementation 'junit:junit:4.7:javadoc' // string with extra args after version
+    testImplementation 'junit:junit:4.13.1' // simple string with ''
+    implementation "junit:junit:4.13.1" // simple string with ""
+    implementation 'junit:junit:4.13.1:javadoc' // string with extra args after version
 
     implementation group: 'junit', name: 'junit', version: '4.7' // map with ''
     implementation group: 'junit', name: 'junit', version: '4.7' // map with ""
