@@ -44,7 +44,7 @@ dependencies {
 
     implementation group: 'junit', name: 'junit', version: '4.7' // map with ''
     implementation group: 'junit', name: 'junit', version: '4.7' // map with ""
-    implementation group: 'junit', name: 'junit', version: '1.0', classifier: 'javadoc' // map with extra entries after version
+    implementation group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc' // map with extra entries after version
 }
 
 publishing {
