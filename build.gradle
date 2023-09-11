@@ -38,7 +38,7 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 dependencies {
-    testImplementation 'junit:junit:4.7'
+    testImplementation 'junit:junit:4.13.1'
 }
 
 publishing {
