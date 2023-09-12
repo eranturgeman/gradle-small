@@ -39,8 +39,8 @@ apply plugin: 'maven-publish'
 
 dependencies {
     implementation("junit:junit:[4.0, 4.9]")
-    implementation("commons-io:commons-io:latest.release")
-    implementation("commons-collections:commons-collections:3.2@jar")
+    implementation("commons-io:commons-io:2.7")
+    implementation("commons-collections:commons-collections:3.2.2@jar")
 
 }
 
