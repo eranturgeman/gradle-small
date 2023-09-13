@@ -3,10 +3,10 @@ val spi: Configuration by configurations.creating
 dependencies {
     implementation(project(":project"))
 
-    runtimeOnly('junit:junit:4.7')
-    runtimeOnly("junit:junit:4.7")
-    implementation('junit:junit:4.7:javadoc')
-    runtimeOnly("commons-io:commons-io:1.2") {
+    runtimeOnly('junit:junit:4.13.1')
+    runtimeOnly("junit:junit:4.13.1")
+    implementation('junit:junit:4.13.1:javadoc')
+    runtimeOnly("commons-io:commons-io:2.7") {
         isTransitive = true
     }
 
