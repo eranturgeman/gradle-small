@@ -16,8 +16,6 @@ dependencies {
     runtimeOnly(group = "commons-io", name = "commons-io", version = "1.2") {
         isTransitive = true
     }
-
-    testCompile("junit", "junit", "4.7")
 }
 
 // Just a smoke test that using this option does not lead to any exception
