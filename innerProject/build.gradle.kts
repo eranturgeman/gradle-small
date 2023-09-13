@@ -16,6 +16,11 @@ dependencies {
     runtimeOnly(group = "commons-io", name = "commons-io", version = "1.2") {
         isTransitive = true
     }
+
+    //SHOULD NOT BE FIXED
+    implementation(group = 'commons-collections', name = 'commons-collections', version = '3.+')
+    implementation(group = 'commons-collections', name = 'commons-collections', version = '[3.0, 3.6)')
+    runtimeOnly('commons-collections:commons-collections:latest.release')
 }
 
 // Just a smoke test that using this option does not lead to any exception
