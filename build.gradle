@@ -38,8 +38,6 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 dependencies {
-    implementation project(':innerProject')
-
     testImplementation 'junit:junit:4.7'
     implementation "junit:junit:4.7"
     implementation 'junit:junit:4.7:javadoc'
