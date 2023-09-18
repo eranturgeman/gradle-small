@@ -46,6 +46,8 @@ dependencies {
 
     //implementation group: 'junit', name: 'junit', version: '4.7'
     implementation group: 'junit', name: 'junit', version: '[4.7, 4.8)'
+    implementation group: 'junit', name: 'junit', version: '4.+'
+    implementation group: 'junit', name: 'junit', version: 'latest.release'
     //implementation group: "junit", name: "junit", version: "4.7"
     //implementation group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc'
     //implementation(group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc')
