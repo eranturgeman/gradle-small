@@ -39,18 +39,20 @@ apply plugin: 'maven-publish'
 
 dependencies {
     testImplementation 'junit:junit:4.7'
-    implementation "junit:junit:4.7"
-    implementation 'junit:junit:4.7:javadoc'
-    implementation('junit:junit:4.7')
-    implementation('junit:junit:4.7') // some comment
+    testImplementation 'junit:junit:4.+'
+    //implementation "junit:junit:4.7"
+    //implementation 'junit:junit:4.7:javadoc'
+    //implementation('junit:junit:4.7')
+    //implementation('junit:junit:4.7') // some comment
 
-    implementation group: 'junit', name: 'junit', version: '4.7'
-    implementation group: "junit", name: "junit", version: "4.7"
-    implementation group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc'
-    implementation(group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc')
+    //implementation group: 'junit', name: 'junit', version: '4.7'
+    //implementation group: "junit", name: "junit", version: "4.7"
+    //implementation group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc'
+    //implementation(group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc')
 
-    implementation("junit:junit") // no version line (no fix)
-    implementation group: 'junit', name: 'junit', version: '4.7' // new line in the middle (no fix)
+    //implementation("junit:junit") // no version line (no fix)
+    //implementation group: 'junit', name: 'junit',
+    //        version: '4.7' // new line in the middle (no fix)
 
 
 }
