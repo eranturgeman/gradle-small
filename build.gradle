@@ -54,7 +54,7 @@ dependencies {
 
     implementation(group: 'commons-collections', name: 'commons-collections', version: '3.+')
     implementation(group: 'commons-collections', name: 'commons-collections', version: '[3.0, 3.6)')
-    implementation('commons-collections:commons-collections:latest.release')
+    //implementation('commons-collections:commons-collections:latest.release')
 }
 
 publishing {
