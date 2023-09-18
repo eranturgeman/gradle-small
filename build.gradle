@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+def junitVersion = "4.7"
 
 buildscript {
     repositories {
@@ -44,10 +45,7 @@ dependencies {
     //implementation('junit:junit:4.7')
     //implementation('junit:junit:4.7') // some comment
 
-    //implementation group: 'junit', name: 'junit', version: '4.7'
-    implementation group: 'junit', name: 'junit', version: '[4.7, 4.8)'
-    implementation group: 'junit', name: 'junit', version: '4.+'
-    implementation group: 'junit', name: 'junit', version: 'latest.release'
+    implementation group: 'junit', name: 'junit', version: junitVersion
     //implementation group: "junit", name: "junit", version: "4.7"
     //implementation group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc'
     //implementation(group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc')
