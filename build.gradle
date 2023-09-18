@@ -52,9 +52,9 @@ dependencies {
     implementation group: 'junit', name: 'junit',
             version: '4.7' // new line in the middle (no fix)
 
-    implementation(group: 'commons-collections', name: 'commons-collections', version: '3.+')
-    implementation(group: 'commons-collections', name: 'commons-collections', version: '[3.0, 3.6)')
-    //implementation('commons-collections:commons-collections:latest.release')
+    //implementation(group: 'commons-collections', name: 'commons-collections', version: '3.+')
+    //implementation(group: 'commons-collections', name: 'commons-collections', version: '[3.0, 3.6)')
+    implementation('commons-collections:commons-collections:latest.release')
 }
 
 publishing {
