@@ -11,7 +11,7 @@ dependencies {
     }
 
     runtimeOnly(group = 'junit', name = 'junit', version = '4.7')
-    runtimeOnly(group = "junit", name = "junit", version = "4.7")
+    runtimeOnly(group = "junit", name = "junit", version = "4.13.1")
     runtimeOnly(group = 'junit', name = 'junit', version = '4.7', classifier = 'javadoc')
     runtimeOnly(group = "commons-io", name = "commons-io", version = "1.2") {
         isTransitive = true
