@@ -17,8 +17,6 @@ dependencies {
     runtimeOnly(group = 'junit', name = 'junit', version = '4.7')
     runtimeOnly(group = "junit", name = "junit",
 
-
-
             version = "4.7")
     runtimeOnly(group = 'junit', name = 'junit', version = '4.7', classifier = 'javadoc')
     runtimeOnly(group = "commons-io", name = "commons-io", version = "1.2") {
@@ -26,9 +24,9 @@ dependencies {
     }
 
     //SHOULD NOT BE FIXED
-    implementation(group = 'commons-collections', name = 'commons-collections', version = '3.+')
-    implementation(group = 'commons-collections', name = 'commons-collections', version = '[3.0, 3.6)')
-    runtimeOnly('commons-collections:commons-collections:latest.release')
+    //implementation(group = 'commons-collections', name = 'commons-collections', version = '3.+')
+    //implementation(group = 'commons-collections', name = 'commons-collections', version = '[3.0, 3.6)')
+    //runtimeOnly('commons-collections:commons-collections:latest.release')
 }
 
 // Just a smoke test that using this option does not lead to any exception
