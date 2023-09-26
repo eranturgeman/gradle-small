@@ -39,11 +39,11 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 dependencies {
-    testImplementation 'junit:junit:4.7'
-    implementation "junit:junit:4.7"
-    implementation 'junit:junit:4.7:javadoc'
-    implementation('junit:junit:4.7')
-    implementation('junit:junit:4.7') // some comment
+    testImplementation 'junit:junit:4.13.1'
+    implementation "junit:junit:4.13.1"
+    implementation 'junit:junit:4.13.1:javadoc'
+    implementation('junit:junit:4.13.1')
+    implementation('junit:junit:4.13.1') // some comment
 
     implementation group: "junit", name: "junit", version: "4.7"
     implementation group: 'junit',

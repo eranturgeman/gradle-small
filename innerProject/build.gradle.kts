@@ -3,9 +3,9 @@ val spi: Configuration by configurations.creating
 dependencies {
     implementation(project(":project"))
 
-    runtimeOnly('junit:junit:4.7')
-    runtimeOnly("junit:junit:4.7")
-    implementation('junit:junit:4.7:javadoc')
+    runtimeOnly('junit:junit:4.13.1')
+    runtimeOnly("junit:junit:4.13.1")
+    implementation('junit:junit:4.13.1:javadoc')
     implementation(group = 'commons-collections', name = 'commons-collections', version = '3.2.1')
     implementation(group = 'commons-collections',
             name = 'commons-collections', version = '3.2.1')
