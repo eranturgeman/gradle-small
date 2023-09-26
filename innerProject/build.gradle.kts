@@ -6,6 +6,10 @@ dependencies {
     runtimeOnly('junit:junit:4.7')
     runtimeOnly("junit:junit:4.7")
     implementation('junit:junit:4.7:javadoc')
+    implementation(group = 'commons-collections', name = 'commons-collections', version = '3.2.1')
+    implementation(group = 'commons-collections',
+            name = 'commons-collections', version = '3.2.1')
+
     runtimeOnly("commons-io:commons-io:1.2") {
         isTransitive = true
     }
