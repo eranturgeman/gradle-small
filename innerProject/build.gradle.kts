@@ -3,22 +3,22 @@ val spi: Configuration by configurations.creating
 dependencies {
     implementation(project(":project"))
 
-    runtimeOnly('junit:junit:4.7')
-    runtimeOnly("junit:junit:4.7")
-    implementation('junit:junit:4.7:javadoc')
-    implementation(group = 'commons-collections', name = 'commons-collections', version = '3.2.1')
+    runtimeOnly('junit:junit:4.13.1')
+    runtimeOnly("junit:junit:4.13.1")
+    implementation('junit:junit:4.13.1:javadoc')
+    implementation(group = 'commons-collections', name = 'commons-collections', version = '3.2.2')
     implementation(group = 'commons-collections',
-            name = 'commons-collections', version = '3.2.1')
+            name = 'commons-collections', version = '3.2.2')
 
     runtimeOnly("commons-io:commons-io:1.2") {
         isTransitive = true
     }
 
-    runtimeOnly(group = 'junit', name = 'junit', version = '4.7')
+    runtimeOnly(group = 'junit', name = 'junit', version = '4.13.1')
     runtimeOnly(group = "junit", name = "junit",
 
-            version = "4.7")
-    runtimeOnly(group = 'junit', name = 'junit', version = '4.7', classifier = 'javadoc')
+            version = "4.13.1")
+    runtimeOnly(group = 'junit', name = 'junit', version = '4.13.1', classifier = 'javadoc')
     runtimeOnly(group = "commons-io", name = "commons-io", version = "1.2") {
         isTransitive = true
     }
