@@ -49,18 +49,16 @@ dependencies {
     implementation group: 'junit',
             name: 'junit', version: '4.7', classifier: 'javadoc'
     implementation(group: 'junit', name: 'junit', version: '4.7', classifier: 'javadoc')
-    implementation(group: 'commons-collections', name: 'commons-collections',
-            version: '3.2.1')
+    //implementation(group: 'commons-collections', name: 'commons-collections', version: '3.2.1')
 
 
     implementation("junit:junit") // no version line (no fix)
     implementation group: 'junit', name: 'junit',
-
-            version: '4.7' // new line in the middle (no fix)
+            version: '4.7' // new line in the middle
 
     //implementation(group: 'commons-collections', name: 'commons-collections', version: '3.+')
     //implementation(group: 'commons-collections', name: 'commons-collections', version: '[3.0, 3.6)')
-    //implementation('commons-collections:commons-collections:latest.release')
+    implementation('commons-collections:commons-collections:latest.release')
 }
 
 publishing {
