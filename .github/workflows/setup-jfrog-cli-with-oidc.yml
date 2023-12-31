@@ -40,7 +40,6 @@ jobs:
         with:
           aud: https://github.com/eranturgeman
 
-
       - name: Test JF CLI
         run: |
           jf c show
