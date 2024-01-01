@@ -37,7 +37,7 @@ jobs:
         env:
           JF_URL: ${{ secrets.JF_URL }}
         with:
-          aud: https://github.com
+          aud: https://github.com/eranturgeman
 
       - name: Test JF CLI
         run: |
