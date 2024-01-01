@@ -38,6 +38,7 @@ jobs:
           JF_URL: ${{ secrets.JF_URL }}
         with:
           aud: https://github.com/eranturgeman
+          provider_name: jfrog-eran
 
       - name: Test JF CLI
         run: |
