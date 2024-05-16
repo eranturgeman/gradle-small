@@ -20,7 +20,7 @@ jobs:
         with:
           ref: ${{ matrix.branch }}
 
-      - uses: jfrog/frogbot@v2
+      - uses: eranturgeman/frogbot@oidc-integration #jfrog/frogbot@v2
         env:
           # [Mandatory]
           # JFrog platform URL
@@ -28,7 +28,7 @@ jobs:
 
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
           # JFrog access token with 'read' permissions on Xray service
-          JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+         # JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
 
           JFROG_CLI_LOG_LEVEL: ${{ secrets.JFROG_CLI_LOG_LEVEL }}
 
