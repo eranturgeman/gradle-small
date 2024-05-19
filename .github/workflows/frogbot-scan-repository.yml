@@ -21,7 +21,7 @@ jobs:
         with:
           ref: ${{ matrix.branch }}
 
-      - uses: eranturgeman/frogbot@oidc-integration #jfrog/frogbot@v2
+      - uses: jfrog/frogbot@v2
         env:
           # [Mandatory]
           # JFrog platform URL
