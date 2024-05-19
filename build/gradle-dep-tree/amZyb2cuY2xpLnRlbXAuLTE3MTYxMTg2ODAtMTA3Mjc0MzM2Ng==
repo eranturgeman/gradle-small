@@ -1,11 +1,6 @@
 {
-  "root": "unspecified:gradle-small:1.0-SNAPSHOT",
+  "root": "unspecified:jfrog.cli.temp.-1716118680-1072743366:1.0-SNAPSHOT",
   "nodes": {
-    "unspecified:gradle-small:1.0-SNAPSHOT": {
-      "unresolved": false,
-      "configurations": ["annotationProcessor", "archives", "compile", "compileClasspath", "compileOnly", "default", "runtime", "runtimeClasspath", "testAnnotationProcessor", "testCompile", "testCompileClasspath", "testCompileOnly", "testRuntime", "testRuntimeClasspath"],
-      "children": ["commons-collections:commons-collections:20040616", "commons-collections:commons-collections:latest.release", "junit:junit:4.7"]
-    },
     "commons-collections:commons-collections:20040616": {
       "unresolved": false,
       "configurations": ["compileClasspath", "default", "runtimeClasspath", "testCompileClasspath", "testRuntimeClasspath"],
@@ -20,6 +15,11 @@
       "unresolved": true,
       "configurations": ["implementation"],
       "children": []
+    },
+    "unspecified:jfrog.cli.temp.-1716118680-1072743366:1.0-SNAPSHOT": {
+      "unresolved": false,
+      "configurations": ["annotationProcessor", "archives", "compile", "compileClasspath", "compileOnly", "default", "runtime", "runtimeClasspath", "testAnnotationProcessor", "testCompile", "testCompileClasspath", "testCompileOnly", "testRuntime", "testRuntimeClasspath"],
+      "children": ["commons-collections:commons-collections:20040616", "commons-collections:commons-collections:latest.release", "junit:junit:4.7"]
     }
   }
 }
