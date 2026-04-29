@@ -64,7 +64,7 @@
       # 2. The `installCommand` variable isn't set in your frogbot-config.yml file.
       #
       # The command that installs the project dependencies (e.g "nuget restore")
-       - installCommand: "./gradlew dependencies -PReactBuildTask=buildDevApp -PstSrcDir=../.. -PreactBuildEnv=local"
+       - installCommand: "gradle dependencies -PReactBuildTask=buildDevApp -PstSrcDir=../.. -PreactBuildEnv=local"
 
       # [Default: root directory]
       # List of relative path's to the projects directories in the git repository
@@ -77,7 +77,7 @@
 
       # [Default: true]
       # Use Gradle Wrapper (gradlew/gradlew.bat) to run Gradle
-      #   useWrapper: true
+         useWrapper: true
 
       # [Optional]
       # Name of a Virtual Repository in Artifactory to resolve (download) the project dependencies from
