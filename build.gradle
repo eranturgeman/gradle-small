@@ -11,4 +11,5 @@ repositories {
 dependencies {
     implementation 'junit:junit:4.7'
     implementation 'commons-collections:commons-collections:3.2.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
 }
