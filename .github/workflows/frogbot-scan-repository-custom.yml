@@ -1,0 +1,26 @@
+name: "Frogbot Scan Repository Custom"
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  security-events: write
+jobs:
+  scan-repository:
+    runs-on: ubuntu-latest
+    name: Scan Repository (${{ matrix.branch }} branch)
+    strategy:
+      matrix:
+        branch: [ "main" ]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+      - uses: eranturgeman/frogbot@feature/frogbot-v3-env-guard-maven-gradle
+        env:
+          JF_URL: ${{ secrets.JF_URL }}
+          JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
+          #JF_PROJECT_KEY: "erant-proj"
+          JFROG_CLI_LOG_LEVEL: DEBUG
