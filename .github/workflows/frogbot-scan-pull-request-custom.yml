@@ -12,9 +12,33 @@ jobs:
     runs-on: ubuntu-latest
     environment: frogbot
     steps:
-      - uses: eranturgeman/frogbot@feature/frogbot-v3-env-guard-maven-gradle
+      - name: Checkout frogbot source
+        uses: actions/checkout@v7
+        with:
+          repository: eranturgeman/frogbot
+          ref: feature/frogbot-v3-env-guard-maven-gradle
+          path: frogbot-src
+          persist-credentials: false
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Build frogbot binary from branch
+        working-directory: frogbot-src
+        run: |
+          ./buildscripts/build.sh frogbot
+          echo "$PWD" >> "$GITHUB_PATH"
+
+      - name: Run Frogbot scan-pull-request
         env:
           JF_URL: ${{ secrets.JF_URL }}
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+          JF_GIT_PROVIDER: github
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JF_GIT_OWNER: ${{ github.event.pull_request.base.repo.owner.login }}
+          JF_GIT_REPO: ${{ github.event.pull_request.base.repo.name }}
+          JF_GIT_PULL_REQUEST_ID: ${{ github.event.pull_request.number }}
           JFROG_CLI_LOG_LEVEL: "DEBUG"
+        run: frogbot scan-pull-request
